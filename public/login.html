@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="./styles/global/globalstyles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-box">
+            <h4>Login to your account</h4>
+            <form>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="input-group">
+                    <label for="remind-me">
+                        <input type="checkbox" id="remind-me" name="remind-me">
+                        Remind me
+                    </label>
+                </div>
+                <button type="submit" class="button"
+                    onclick="window.location.href='/public/connectwithfb.html';">Login</button>
+            </form>
+            <p>New to FBdmHelpDesk? <a href="./registrations.html">Sign up</a></p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FB DM Helpdesk</title>
+    <link rel="stylesheet" href="./styles/global/globalstyles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-box">
+            <h4>Create Account</h4>
+            <form>
+                <div class="input-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="input-group">
+                    <label for="remind-me">
+                        <input type="checkbox" id="remind-me" name="remind-me">
+                        Remind me
+                    </label>
+                </div>
+                <button type="submit" class="button" onclick="window.location.href='/public/connectwithfb.html';">Sign up</button>
+            </form>
+            <p>Already have an account? <a href="login.html">Login</a></p>
+        </div>
+    </div>
+</body>
+</html>

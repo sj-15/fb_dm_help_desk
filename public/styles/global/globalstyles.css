@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #073478;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap;
+    /* added */
+}
+
+.input-box {
+    background-color: white;
+    padding: 2vw;
+    /* changed */
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-width: 200px;
+    /* changed */
+    max-width: 25%;
+    /* changed */
+    width: 100%;
+}
+
+.input-box h1 {
+    margin-bottom: 2vw;
+    /* changed */
+}
+
+.input-group {
+    margin-bottom: 1vw;
+    /* changed */
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5vw;
+    /* changed */
+}
+
+.input-group input[type="text"],
+.input-group input[type="email"],
+.input-group input[type="password"] {
+    padding: 0.8vw;
+    /* changed */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.button {
+    background-color: #073478;
+    color: white;
+    border: none;
+    padding: 10px;
+    /* changed */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1vw;
+    /* changed */
+    margin-top: 1vw;
+    /* changed */
+    min-width: 200px;
+    /* changed */
+    max-width: 25%;
+    /* changed */
+    width: 100%;
+}
+
+.button[type="delete"] {
+    background-color: #f82828;
+}
+
+.button[type="delete"]:hover {
+    background-color: #f75151;
+}
+
+.button:hover {
+    background-color: #0e5a96;
+}
+
+p {
+    margin-top: 2vw;
+    /* changed */
+}
+
+p a {
+    color: #1877f2;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    .input-box {
+        /* padding: 10px; */
+        max-width: 25%;
+    }
+
+    .input-group input[type="text"],
+    .input-group input[type="email"],
+    .input-group input[type="password"] {
+        padding: 5px;
+        max-width: 25%;
+    }
+
+    .button {
+        padding: 8px 16px;
+        font-size: 14px;
+        max-width: 25%;
+    }
+}
