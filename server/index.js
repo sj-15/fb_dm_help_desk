@@ -18,7 +18,7 @@ app.use(cors());
 
 // routes
 app.use("/api/users", userRoutes);
-app.use("/api/auth", authRoutes);
+app.use("http://13.60.38.43:8080/api/auth", authRoutes);
 
 const port = process.env.PORT || 8080;
 app.listen(port, () => console.log(`Listening on port ${port}...`));

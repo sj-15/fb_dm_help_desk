@@ -8,7 +8,7 @@ document
     const remindMe = document.getElementById("remind-me").checked;
 
     try {
-      const response = await fetch("http://localhost:8080/api/auth", {
+      const response = await fetch("http://13.60.38.43:8080/api/auth", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
